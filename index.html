@@ -11,45 +11,45 @@
         <header class="">
             <h1>  Ejemplo de HTML5, javascript y CSS3 </h1>
         </header>
-        <h2 class="col-md-8">Pagina diseñada con CSS3 y bootstrap; ademas se emplea javascript, para darle la funcionalidad</h2>
+        <h2 class="col-md-8">Pagina diseñada con CSS3 y bootstrap; ademas se emplea javascript y jQuery, para agregarle la funcionalidad.</h2>
         <nav class="col-md-4">
-            <button class="btn btn-success" onmouseover="ocultarCubo1()" onmouseout="mostrarCubo1()">Ocultar Cubo 1</button>
-            <button class="btn btn-info" onmousedown="ocultarCubo2()" onmouseup="mostrarCubo2()">Ocultar Cubo 2</button>
-            <button class="btn btn-danger" onmouseup="ocultarCubo3()" onmousedown="mostrarCubo3()">Ocultar Cubo 3</button>
+            <button class="btn btn-success" onmouseover="ocultarCubo1()" onmouseout="mostrarCubo1()">Cubo 1</button>
+            <button class="btn btn-info" onmousedown="ocultarCubo2()" onmouseup="mostrarCubo2()">Cubo 2</button>
+            <button class="btn btn-danger" onclick="toggleCubo3()">Cubo 3</button>
         </nav>
         <div class="clearfix"></div>
         <section>
                 <div class="cubes-section">
                     <div id="cube_1" class="cube">
-                        <div class="topFace" onclick="data('cube_1', 'blue')"><div>
+                        <div class="topFace" onclick="infoCube('cube_1', 'blue')"><div>
                             <h2>Azul</h2>
                         </div></div>
-                        <div class="leftFace" onclick="data('cube_1', 'red')">
+                        <div class="leftFace" onclick="infoCube('cube_1', 'red')">
                             <h2>Rojo</h2>
                         </div>
-                        <div class="rightFace" onclick="data('cube_1', 'green')">
+                        <div class="rightFace" onclick="infoCube('cube_1', 'green')">
                             <h2>Verde</h2>
                         </div>
                     </div>
                     <div id="cube_2" class="cube two">
-                        <div class="topFace" onclick="data('cube_2', 'blue')"><div>
+                        <div class="topFace" onclick="infoCube('cube_2', 'blue')"><div>
                             <h2>Azul</h2>
                         </div></div>
-                        <div class="leftFace" onclick="data('cube_2', 'red')">
+                        <div class="leftFace" onclick="infoCube('cube_2', 'red')">
                             <h2>Rojo</h2>
                         </div>
-                        <div class="rightFace" onclick="data('cube_2', 'green')">
+                        <div class="rightFace" onclick="infoCube('cube_2', 'green')">
                             <h2>Verde</h2>
                         </div>
                     </div>
                     <div id="cube_3" class="cube three">
-                        <div class="topFace" onclick="data('cube_3', 'blue')"><div>
+                        <div class="topFace" onclick="infoCube('cube_3', 'blue')"><div>
                             <h2>Azul</h2>
                         </div></div>
-                        <div class="leftFace" onclick="data('cube_3', 'red')">
+                        <div class="leftFace" onclick="infoCube('cube_3', 'red')">
                             <h2>Rojo</h2>
                         </div>
-                        <div class="rightFace" onclick="data('cube_3', 'green')">
+                        <div class="rightFace" onclick="infoCube('cube_3', 'green')">
                             <h2>Verde</h2>
                         </div>
                     </div>
@@ -58,9 +58,13 @@
         <div class="clearfix"></div>
         <footer>
             <div>
-                <p>© 2015 Oscar Jimenez </p>
+                <p>Oscar Jimenez</p>
             </div>
         </footer>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="assets/js/funcionality.js"></script>
     </body>
 </html>
